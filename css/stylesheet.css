@@ -1,15 +1,243 @@
-body {
-    background-color: gray;
+*{box-sizing: border-box;}
+
+body{
+    background-color: rgb(61, 61, 61);
 }
 
-header{ 
-    width: 100%;
-    background:url(headerbanner.jpg);
-    background-size:cover;
-    background-position:center ;    
+header{
+    background-image: url(../images/stars-1014109.jpg);
+    background-size: cover;
+    position: absolute;
+    left: 12em;
+    top: 0;
+    right: 0;
+    width: 66.8em;
+    height: 15em;
 }
 
-h1{
+/*the nav-container to shape and size*/
+#nav-container{
+    background-color: rgb(67, 0, 105);
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 50em;
+    width: 12em;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
+}
+
+/* heading in nav */
+h2{
+    position: relative;
+    top:3em;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-left: .5em;
+    margin-right: .5em;
+    border: solid 0.2em black;
+    padding: .2em .2em .2em .2em;
+    text-decoration-line: underline;
+}
+
+
+
+#nav-list{
+    position: relative;
+    top: 4em;
     color: white;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9em;
+    text-align: left;
+    
+}
+
+#navList-style {
+    margin-bottom: 1.3em;
+    margin-right: 3em;
+    margin-left: .1em;
+    text-align: left;
+  
+}
+
+.nav-link{
+    color: rgb(255, 255, 255);
+
+}
+
+.nav-link:hover{
+    background-color: rgb(250, 250, 250);
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    border: solid 0.1em black;
+    padding: .1em .1em .1em .1em;
+    margin-right: 1em;
+    margin-left: -0.5em;
+}
+
+section{
+    position: absolute;
+    top: 15em;
+    left: 12em;
+    bottom: 15em;
+}
+
+.content-box{
+    margin: 2em 2em 2em 2em;
+    border: solid .4em black;
+    padding: .1em 1em 1em .4em;
+}
+
+h3{
+    background-color: rgb(4, 153, 96);
+    margin: 1em 1em 1em 0;
+    padding:.4em .4em .4em .4em;
+    border: solid .2em black;
+    font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
 }
+
+h4{
+    background-color: rgb(0, 25, 105);
+    margin: 1em 2em 1em 0;
+    border: solid .2em black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+
+}
+
+#highschoolcontent-container{
+    display: flex;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    justify-content: space-between;
+}
+
+#certificate{
+     flex: 2;
+     padding: 1em, 2em, 1em, 2em;
+     margin: 1em 2em 1em 2em;
+ }
+
+#year{
+     flex: 3;
+     padding: 1em, 2em, 1em, 2em;
+     margin: 1em 2em 1em 2em;
+ }
+
+#marks{
+     flex: 1;
+     padding: 1em, 2em, 1em, 2em;
+     margin: 1em 2em 1em 2em;
+ }
+
+#Course-container{
+    display: flex;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    justify-content: space-between;
+ }
+
+#Place{
+     flex: 2;
+     padding: 1em, 2em, 1em, 2em;
+     margin: 1em 2em 1em 2em;
+ }
+#Year{
+    flex: 3;
+    padding: 1em, 2em, 1em, 2em;
+    margin: 1em 2em 1em 2em;
+}
+
+#type{
+    flex: 1;
+    padding: 1em, 2em, 1em, 2em;
+    margin: 1em 2em 1em 2em;
+}
+
+footer{
+    background-image: url(../images/stars-1014109.jpg);
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    left: 12em;
+    bottom: 0;
+    right: 0;
+    top: 150em;
+    width: 66.8em;
+    height: 15em;
+    padding: 1em 1em 2em 1em;
+}
+
+
+
+#contactANDsocial-container{
+    display: flex;
+
+}
+
+h5{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+}
+/* #contact-style{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: solid .3em white;
+    fl
+} */
+
+#contact-container{
+    display: flex;
+    border: solid .3em white;
+    margin-right: 1em;
+}
+
+#linkImg-mail{
+    border-radius: 50%;
+    width: 5em;
+    margin: 2em 2em 2em 2em;
+}
+
+#linkImg-phone{
+    border-radius: 50%;
+    width: 5em;
+    margin: 2em 2em 2em 2em;
+}
+#social-container{
+    display: flex;
+    border: solid .3em white;
+    margin-left: 1em;
+}
+
+/* #social-style{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: solid .3em white;
+    flex-flow: row start;
+} */
+
+#linkImg-instagram{
+    border-radius: 50%;
+    width: 5em;
+    margin: 2em 2em 2em 2em;
+}
+
+#linkImg-linkdin{
+    border-radius: 50%;
+    width: 5em;
+    margin: 2em 2em 2em 2em;
+}
+
