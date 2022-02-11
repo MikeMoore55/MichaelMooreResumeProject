@@ -148,6 +148,39 @@ h4{
 
 }
 
+#GedLink {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    margin: 2em;
+}
+
+#GedLink:hover{
+    background-color: rgb(171, 38, 175);
+    color: rgb(245, 245, 245);
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid 0.1em black;
+    padding: .1em .1em .1em .1em;
+    
+}
+
+#CodeSpaceLink{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    margin: 2em;
+}
+
+#CodeSpaceLink:hover{
+    background-color: rgb(171, 38, 175);
+    color: rgb(245, 245, 245);
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid 0.1em black;
+    padding: .1em .1em .1em .1em;
+}
+
 #highschoolcontent-container{
     display: flex;
     flex-flow: row wrap;
@@ -155,29 +188,28 @@ h4{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     justify-content: space-between;
-    padding: 1em 1em .5em 1em;
 }
 
 #type-container{
      flex: 2;
      padding: 1em, 2em, 1em, 2em;
-     margin: 1em 2em .5em 2em;
+     margin: 1em 2em 1em 2em;
 }
 
 #year-container{
     flex: 1;
     padding: 1em, 2em, 1em, 2em;
-    margin: 1em 2em .5em 2em;
+    margin: 1em 2em 1em 2em;
 }
-
-#marks-container{
+/* this second box is used for the list under "highschool diploma" and "intro to web" under the education part to keep them in line */
+.Second-box{
      padding: 1em, 2em, 1em, 2em;
      margin: 1em 2em 1em 2em;
      font-size: 1em;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      color: white;
 }
-
+/* this education description container is used for the list under "highschool diploma" and "intro to web" under the education part because they both contain the same type of info to keep them in line  */
 .EducationDescription-container{
     padding: 1em, 2em, 1em, 2em;
     margin: 1em 2em 1em 2em;
@@ -186,7 +218,6 @@ h4{
     color: white;
 }
 
-
 #Course-container{
     display: flex;
     flex-flow: row wrap;
@@ -194,28 +225,19 @@ h4{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     justify-content: space-between;
-    padding: 1em 1em 1em 1em;
-    margin: 1em 1em .5em 1em;
+    
  }
 
-#institution-container{
-    padding: .5em 2em 1em 2em;
-    margin: .5em 2em 1em 2em;
-    font-size: 1em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-
- }
 #CourseYear-container{
     flex: 1;
-    padding: 1em 2em .5em 2em;
-    margin: 1em 2em .5em 2em;
+    padding: 1em, 2em, 0em, 2em;
+    margin: 1em 2em 0em 2em;
 }
 
 #typeCourse-container{
     flex: 2;
-    padding: 1em 2em .5em 2em;
-    margin: 1em 2em .5em 2em;
+    padding: 1em, 2em, 0em, 2em;
+    margin: 1em 2em 0em 2em;
 }
 
 p {
@@ -259,46 +281,43 @@ footer{
 
 #contactANDsocial-container{
     display: flex;
-
 }
-
-h5{
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 100%;
-}
-
-
 #contact-container{
     display: flex;
+    flex-flow: row wrap;
     border: solid .3em white;
     margin-right: 1em;
 }
 
+h5{
+    display: flex;
+    flex: 1;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    padding: 1em 2em 1em 2em;
+}
+
 #linkImg-mail{
+    flex: 2;
     border-radius: 50%;
     width: 5em;
     margin: 2em 2em 2em 2em;
 }
 
 #linkImg-phone{
+    flex: 2;
     border-radius: 50%;
     width: 5em;
     margin: 2em 2em 2em 2em;
 }
 #social-container{
     display: flex;
+    flex: 2;
     border: solid .3em white;
     margin-left: 1em;
 }
 
-/* #social-style{
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 100%;
-    border: solid .3em white;
-    flex-flow: row start;
-} */
 
 #linkImg-instagram{
     border-radius: 50%;
