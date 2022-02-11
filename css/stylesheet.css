@@ -1,7 +1,7 @@
 *{box-sizing: border-box;}
 
 body{
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(78, 70, 70);
 }
 
 header{
@@ -14,6 +14,7 @@ header{
     right: 0;
     width: 66.8em;
     height: 15em;
+    margin: .1em .1em .1em .1em;
 }
 
 #profile-Pic{
@@ -57,7 +58,7 @@ header{
     left: 0;
     top: 0;
     bottom: 0;
-    height: 50em;
+    height: 100em;
     width: 12em;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
@@ -139,7 +140,7 @@ h3{
 }
 
 h4{
-    background-color: rgb(0, 25, 105);
+    background-color: rgb(23, 44, 112);
     margin: 1em 2em 1em 0;
     border: solid .2em black;
     font-family: 'Courier New', Courier, monospace;
@@ -154,35 +155,39 @@ h4{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     justify-content: space-between;
-    padding: 1em 1em 1em 1em;
+    padding: 1em 1em .5em 1em;
 }
 
 #type-container{
-     flex: 3;
+     flex: 2;
      padding: 1em, 2em, 1em, 2em;
-     margin: 1em 2em 1em 2em;
-}
-
-#marks-container{
-     flex: 1;
-     padding: 1em, 2em, 1em, 2em;
-     margin: 1em 2em 1em 2em;
+     margin: 1em 2em .5em 2em;
 }
 
 #year-container{
-    flex: 4;
+    flex: 1;
     padding: 1em, 2em, 1em, 2em;
-    margin: 1em 2em 1em 2em;
- }
+    margin: 1em 2em .5em 2em;
+}
 
-#hishschoolDiscription-container{
-    flex: 2;
+#marks-container{
+     padding: 1em, 2em, 1em, 2em;
+     margin: 1em 2em 1em 2em;
+     font-size: 1em;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: white;
+}
+
+.EducationDescription-container{
     padding: 1em, 2em, 1em, 2em;
     margin: 1em 2em 1em 2em;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
 
 
- #Course-container{
+#Course-container{
     display: flex;
     flex-flow: row wrap;
     color: white;
@@ -190,30 +195,27 @@ h4{
     font-size: 1em;
     justify-content: space-between;
     padding: 1em 1em 1em 1em;
-    margin: 1em 1em 1em 1em;
+    margin: 1em 1em .5em 1em;
  }
 
 #institution-container{
-    flex: 4;
-    padding: 1em 2em 1em 2em;
-    margin: 1em 2em 1em 2em;
+    padding: .5em 2em 1em 2em;
+    margin: .5em 2em 1em 2em;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+
  }
 #CourseYear-container{
     flex: 1;
-    padding: 1em 2em 1em 2em;
-    margin: 1em 2em 1em 2em;
+    padding: 1em 2em .5em 2em;
+    margin: 1em 2em .5em 2em;
 }
 
 #typeCourse-container{
     flex: 2;
-    padding: 1em 2em 1em 2em;
-    margin: 1em 2em 1em 2em;
-}
-
-#courseDiscription-container{
-    flex: 2;
-    padding: 1em 2em 1em 2em;
-    margin: 1em 2em 1em 2em;
+    padding: 1em 2em .5em 2em;
+    margin: 1em 2em .5em 2em;
 }
 
 p {
@@ -250,6 +252,7 @@ footer{
     width: 66.8em;
     height: 15em;
     padding: 1em 1em 2em 1em;
+    margin: .1em .1em .1em .1em;
 }
 
 
@@ -264,13 +267,7 @@ h5{
     font-family: 'Courier New', Courier, monospace;
     font-size: 100%;
 }
-/* #contact-style{
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 100%;
-    border: solid .3em white;
-    fl
-} */
+
 
 #contact-container{
     display: flex;
