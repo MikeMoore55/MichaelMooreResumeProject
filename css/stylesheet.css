@@ -8,12 +8,46 @@ header{
     background-image: url(../images/stars-1014109.jpg);
     background-size: cover;
     position: absolute;
+    z-index: 0;
     left: 12em;
     top: 0;
     right: 0;
     width: 66.8em;
     height: 15em;
 }
+
+#profile-Pic{
+    border-radius: 50%;
+    width: 5em;
+    margin: 2em 2em 2em 2em;
+}
+
+#name {
+    position: absolute;
+    left: 23em;
+    top: 0em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    text-align: right;
+    margin: .2em .2em .2em .2em;
+    border: solid .1em white;
+    padding: 1em;
+}
+
+#personalDiscrition{
+    position: absolute;
+    left: 17em;
+    top: 9.5em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    text-align: right;
+    margin: .2em .2em .2em .2em;
+    border: solid .1em white;
+    padding: 1em;
+}
+
 
 /*the nav-container to shape and size*/
 #nav-container{
@@ -115,53 +149,93 @@ h4{
 
 #highschoolcontent-container{
     display: flex;
+    flex-flow: row wrap;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     justify-content: space-between;
+    padding: 1em 1em 1em 1em;
 }
 
-#certificate{
-     flex: 2;
-     padding: 1em, 2em, 1em, 2em;
-     margin: 1em 2em 1em 2em;
- }
-
-#year{
+#type-container{
      flex: 3;
      padding: 1em, 2em, 1em, 2em;
      margin: 1em 2em 1em 2em;
- }
+}
 
-#marks{
+#marks-container{
      flex: 1;
      padding: 1em, 2em, 1em, 2em;
      margin: 1em 2em 1em 2em;
+}
+
+#year-container{
+    flex: 4;
+    padding: 1em, 2em, 1em, 2em;
+    margin: 1em 2em 1em 2em;
  }
 
-#Course-container{
-    display: flex;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1em;
-    justify-content: space-between;
- }
-
-#Place{
-     flex: 2;
-     padding: 1em, 2em, 1em, 2em;
-     margin: 1em 2em 1em 2em;
- }
-#Year{
-    flex: 3;
+#hishschoolDiscription-container{
+    flex: 2;
     padding: 1em, 2em, 1em, 2em;
     margin: 1em 2em 1em 2em;
 }
 
-#type{
-    flex: 1;
-    padding: 1em, 2em, 1em, 2em;
+
+ #Course-container{
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    justify-content: space-between;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
+ }
+
+#institution-container{
+    flex: 4;
+    padding: 1em 2em 1em 2em;
     margin: 1em 2em 1em 2em;
+ }
+#CourseYear-container{
+    flex: 1;
+    padding: 1em 2em 1em 2em;
+    margin: 1em 2em 1em 2em;
+}
+
+#typeCourse-container{
+    flex: 2;
+    padding: 1em 2em 1em 2em;
+    margin: 1em 2em 1em 2em;
+}
+
+#courseDiscription-container{
+    flex: 2;
+    padding: 1em 2em 1em 2em;
+    margin: 1em 2em 1em 2em;
+}
+
+p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+
+#skills-List{
+    list-style: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    margin-bottom: .4em;
+}
+
+#intrest-List {
+    list-style: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    margin-bottom: .6em;
 }
 
 footer{
@@ -172,7 +246,7 @@ footer{
     left: 12em;
     bottom: 0;
     right: 0;
-    top: 150em;
+    top: 165em;
     width: 66.8em;
     height: 15em;
     padding: 1em 1em 2em 1em;
