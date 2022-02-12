@@ -17,10 +17,10 @@ header{
     margin: .1em .1em .1em .1em;
 }
 
-#profilePic{
+#profile-Pic{
     border-radius: 50%;
-    width: 13em;
-    margin: 1em 2em 2em 2em;
+    width: 5em;
+    margin: 2em 2em 2em 2em;
 }
 
 #name {
