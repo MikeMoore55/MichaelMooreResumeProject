@@ -4,6 +4,9 @@ body{
     background-color: rgb(78, 70, 70);
 }
 
+
+/* background image for header was found on pixabay.com */
+
 header{
     background-image: url(../images/stars-1014109.jpg);
     background-size: cover;
@@ -20,7 +23,7 @@ header{
 #profilePic{
     border-radius: 50%;
     width: 13em;
-    margin: 1em 2em 2em 2em;
+    margin: .5em 2em 2em 2em;
 }
 
 #name {
@@ -48,7 +51,8 @@ header{
 }
 
 
-/*the nav-container to shape and size*/
+/*the nav-container is to shape and size the navigation menu*/
+
 #nav-container{
     background-color: rgb(67, 0, 105);
     position: fixed;
@@ -63,7 +67,6 @@ header{
 
 }
 
-/* heading in nav */
 h2{
     position: relative;
     top:3em;
@@ -78,8 +81,6 @@ h2{
     padding: .2em .2em .2em .2em;
     text-decoration-line: underline;
 }
-
-
 
 #nav-list{
     position: relative;
@@ -100,9 +101,11 @@ h2{
   
 }
 
+
+/* how the link should look when not hovered or active */
+
 .nav-link{
     color: rgb(255, 255, 255);
-
 }
 
 .nav-link:hover{
@@ -114,6 +117,8 @@ h2{
     margin-right: 1em;
     margin-left: -0.5em;
 }
+
+/* for the position of the section */
 
 section{
     position: absolute;
@@ -199,7 +204,10 @@ h4{
     padding: 1em, 2em, 1em, 2em;
     margin: 1em 2em 1em 2em;
 }
+
+
 /* this second box is used for the list under "highschool diploma" and "intro to web" under the education part to keep them in line */
+
 .Second-box{
      padding: 1em, 2em, 1em, 2em;
      margin: 1em 2em 1em 2em;
@@ -207,7 +215,10 @@ h4{
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      color: white;
 }
+
+
 /* this education description container is used for the list under "highschool diploma" and "intro to web" under the education part because they both contain the same type of info to keep them in line  */
+
 .EducationDescription-container{
     padding: 1em, 2em, 1em, 2em;
     margin: 1em 2em 1em 2em;
@@ -259,6 +270,8 @@ p {
     font-size: 1em;
     margin-bottom: .6em;
 }
+
+/* background image for footer was found on pixabay.com */
 
 footer{
     background-image: url(../images/stars-1014109.jpg);
@@ -346,4 +359,3 @@ footer{
     width: 5em;
     margin: 2em 2em 2em 2em;
 }
-
