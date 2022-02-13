@@ -235,7 +235,7 @@ h4{
     font-size: 1em;
     justify-content: space-between;
     
- }
+}
 
 #CourseYear-container{
     flex: 1;
@@ -330,6 +330,7 @@ footer{
     border-radius: 50%;
     width: 5em;
     margin: 2em 2em 2em 2em;
+    background-color: transparent;
 }
 
 #linkImg-phone{
@@ -337,6 +338,7 @@ footer{
     border-radius: 50%;
     width: 5em;
     margin: 2em 2em 2em 2em;
+    background-color: transparent;
 }
 
 #socialDetails-container{
@@ -351,6 +353,7 @@ footer{
     border-radius: 50%;
     width: 5em;
     margin: 2em 2em 2em 2em;
+    background-color: transparent;
 }
 
 #linkImg-linkdin{
@@ -358,4 +361,7 @@ footer{
     border-radius: 50%;
     width: 5em;
     margin: 2em 2em 2em 2em;
+    background-color: transparent;
 }
+
+
