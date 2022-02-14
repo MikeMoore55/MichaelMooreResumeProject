@@ -23,6 +23,10 @@ header{
     margin: .1em .1em .1em .1em;
 }
 
+header:hover{
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+}
+
 #profilePic{
     border-radius: 50%;
     width: 13em;
@@ -73,6 +77,7 @@ header{
 
 #nav-container{
     background-color: rgb(67, 0, 105);
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
     position: fixed;
     z-index: 0;
     left: 0;
@@ -96,7 +101,7 @@ h2{
     margin-bottom: 2em;
     margin-left: .5em;
     margin-right: .5em;
-    border: solid 0.2em black;
+    border: solid 0.1em black;
     padding: .2em .2em .2em .2em;
     text-decoration-line: underline;
 }
@@ -112,8 +117,11 @@ h2{
     
 }
 
-.navList-style {
-    margin-bottom: 1.7em;
+
+/* i seperated the nav-list from nav structure, for the nav-list provides the style and navList-structure, structures the list */
+
+.navList-structure {
+    margin-bottom: 1.9em;
     margin-right: 3em;
     margin-left: .1em;
     text-align: left;
@@ -139,7 +147,7 @@ h2{
 
 /* for the position of the section */
 
-/* everything in section */
+/* everything in section/main */
 
 section{
     position: absolute;
@@ -148,10 +156,16 @@ section{
     bottom: 15em;
 }
 
-.content-box{
+.content-container{
     margin: 2em 2em 2em 2em;
-    border: solid .4em black;
+    border: solid .2em black;
     padding: .1em 1em 1em .4em;
+}
+
+
+/* when you hover over my content, there will now be a shadow */
+.content-container:hover{
+    box-shadow: 0 7px 17px rgb(0, 0, 0);
 }
 
 /* h3=content heading */
@@ -160,7 +174,7 @@ h3{
     background-color: rgb(4, 153, 96);
     margin: 1em 1em 1em 0;
     padding:.4em .4em .4em .4em;
-    border: solid .2em black;
+    border: solid .1em black;
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -171,7 +185,8 @@ h3{
 h4{
     background-color: rgb(23, 44, 112);
     margin: 1em 2em 1em 0;
-    border: solid .2em black;
+    padding: .1em 0em .1em 0em;
+    border: solid .1em black;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5em;
 
@@ -185,7 +200,8 @@ h4{
 }
 
 #GedLink:hover{
-    background-color: rgb(67, 0, 105);
+    background-color: rgb(4, 153, 96);
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
     color: rgb(245, 245, 245);
     font-size: 1.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -202,7 +218,8 @@ h4{
 }
 
 #CodeSpaceLink:hover{
-    background-color: rgb(67, 0, 105);;
+    background-color: rgb(4, 153, 96);
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
     color: rgb(245, 245, 245);
     font-size: 1.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -234,7 +251,7 @@ h4{
 
 /* this second box is used for the list under "highschool diploma" and "intro to web" under the education part to keep them in line */
 
-.Second-box{
+.Second-container{
      padding: 1em, 2em, 1em, 2em;
      margin: 1em 2em 1em 2em;
      font-size: 1em;
@@ -283,7 +300,7 @@ h4{
     margin: .5em 2em 0em 1em;
 }
 
-.skills-List{
+.skillsAndinterest-List{
     list-style: none;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -291,20 +308,13 @@ h4{
     margin-bottom: .4em;
 }
 
-.interest-List {
-    list-style: none;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1em;
-    margin-bottom: .6em;
-}
-
 .coding-list{
-    list-style: none;
+    
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     margin-bottom: .6em;
+    margin-left: .7em;
 }
 
 /* background image for footer was found on "pixabay.com" */
@@ -324,6 +334,10 @@ footer{
     height: 15em;
     padding: .1em .1em 1em .1em;
     margin: .1em .1em .1em .1em;
+}
+
+footer:hover{
+    box-shadow: 0 7px 17px rgb(0, 0, 0);
 }
 
 #footerHeadings-container{
@@ -379,6 +393,7 @@ footer{
     background-color: transparent;
 }
 
+
 #socialDetails-container{
     flex: 2;
     display: flex;
@@ -401,5 +416,3 @@ footer{
     margin: 2em 2em 2em 2em;
     background-color: transparent;
 }
-
-
