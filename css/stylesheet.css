@@ -1,11 +1,14 @@
+/* [to michael] in lesson from Mr Schalk always do this */
+
 *{box-sizing: border-box;}
+
 
 body{
     background-color: rgb(114, 103, 103);
 }
 
 
-/* background image for header was found on pixabay.com */
+/* background image for header was found on "pixabay.com" */
 
 header{
     background-image: url(../images/stars-1014109.jpg);
@@ -24,6 +27,7 @@ header{
     border-radius: 50%;
     width: 13em;
     margin: .5em 2em 2em 2em;
+    border: solid white .2em;
 }
 
 #name {
@@ -38,10 +42,23 @@ header{
     padding: .5em .2em .5em .2em;
 }
 
-#personalDiscrition{
+#DateOfBirth{
+    position: absolute;
+    left: 58em;
+    top: 6.3em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    text-align: right;
+    margin: .1em .9em .1em .1em;
+    padding: .5em .2em .5em .2em;
+
+}
+
+#personalDescription{
     position: absolute;
     left: 17em;
-    top: 9.5em;
+    top: 8em;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
@@ -50,6 +67,7 @@ header{
     padding: .5em .2em .5em .2em;
 }
 
+/* everything in nav */
 
 /*the nav-container is to shape and size the navigation menu*/
 
@@ -67,6 +85,7 @@ header{
 
 }
 
+/* h2=nav haeding */
 h2{
     position: relative;
     top:3em;
@@ -93,8 +112,8 @@ h2{
     
 }
 
-#navList-style {
-    margin-bottom: 1.3em;
+.navList-style {
+    margin-bottom: 1.7em;
     margin-right: 3em;
     margin-left: .1em;
     text-align: left;
@@ -120,6 +139,8 @@ h2{
 
 /* for the position of the section */
 
+/* everything in section */
+
 section{
     position: absolute;
     top: 15em;
@@ -133,6 +154,8 @@ section{
     padding: .1em 1em 1em .4em;
 }
 
+/* h3=content heading */
+
 h3{
     background-color: rgb(4, 153, 96);
     margin: 1em 1em 1em 0;
@@ -141,6 +164,9 @@ h3{
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
 }
+
+
+/* h4= content sub heading */
 
 h4{
     background-color: rgb(23, 44, 112);
@@ -249,13 +275,15 @@ h4{
     margin: 1em 2em 0em 2em;
 }
 
-p {
+.experience-container{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
+    padding: .5em 2em 0em 1em;
+    margin: .5em 2em 0em 1em;
 }
 
-#skills-List{
+.skills-List{
     list-style: none;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -263,7 +291,7 @@ p {
     margin-bottom: .4em;
 }
 
-#intrest-List {
+.interest-List {
     list-style: none;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -271,7 +299,17 @@ p {
     margin-bottom: .6em;
 }
 
-/* background image for footer was found on pixabay.com */
+.coding-list{
+    list-style: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    margin-bottom: .6em;
+}
+
+/* background image for footer was found on "pixabay.com" */
+
+/* everything in the footer */
 
 footer{
     background-image: url(../images/stars-1014109.jpg);
@@ -281,7 +319,7 @@ footer{
     left: 12em;
     bottom: 0;
     right: 0;
-    top: 165em;
+    top: 170em;
     width: 66.8em;
     height: 15em;
     padding: .1em .1em 1em .1em;
