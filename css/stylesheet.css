@@ -1,153 +1,134 @@
 /* from lesson with Mr Schalk, Always do this */
-
 *{box-sizing: border-box;}
-
-
+/* added this to allow internal links to scroll to desired content instead of directly taking you there */
+*{scroll-behavior: smooth;}
+/* to see where i got my color-shceme follow this link:" https://coolors.co/004e89-ff8200-69140e-173753-868784 */
 body{
-    background-color: #515050;
+    background-color: #868784;
 }
-
-
-/* background image for header was found on "pixabay.com" */
-
+/* made header roughly the same size of the section containers so the flow can look better */
 header{
-    background-image: url(../images/star-background.jpg);
+    background-color: #173753;
     background-size: cover;
     position: absolute;
-    z-index: 0;
-    left: 12em;
-    top: 0;
-    right: 0;
-    width: 66.8em;
-    height: 15em;
-    margin: 0em .0em .1em .0em;
+    z-index: 1;
+    left: 15.2%;
+    right: 4%;
+    top: 2%;
+    width: 79%;
+    height: 25%;
+    margin: 0em 2em 2em 2em;
+    border: .1em;
+    padding: 1% 1% 1% 1%;
 }
 /* added a shadow hover affect to header, so people can know they are currently on it and to help seperate it from the content below */
 header:hover{
-    box-shadow: 0 0px 20px rgb(0, 0, 0);
+    box-shadow: 0 5px 15px rgb(0, 0, 0); 
 }
-
-#profilePic{
-    border-radius: 50%;
-    width: 13em;
-    margin: .5em 2em 2em 2em;
-    border: solid rgb(0, 0, 0) .2em;
-}
-
-#profilePic:hover{
-    box-shadow: 0 0px 20px rgb(0, 0, 0);
-}
-
 #name {
-    position: absolute;
-    left: 18em;
+    position: relative;
+    z-index: 1;
+    left: 0;
     top: 0em;
     color: white;
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2.5em;
-    text-align: right;
-    margin: 1em .1em .1em .1em;
-    padding: .5em .2em .5em .2em;
+    font-size: 200%;
+    text-align: center;
+    margin: .5% .1em .1em .1em;
+    padding: 0 .2em .1em .2em;
+    text-decoration-line: underline;
 }
-
-#DateOfBirth{
-    position: absolute;
-    left: 58em;
-    top: 6.3em;
+#date-of-birth{
+    position: relative;
+    z-index: 1;
+    left: .5em;
+    top: .1em;
     color: white;
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
-    text-align: right;
-    margin: .1em .9em .1em .1em;
-    padding: .5em .2em .5em .2em;
+    text-align: center;
+    margin: .1em .2em .1em .1em;
+    padding: .1em .2em .5em .2em;
 
 }
-
-#personalDescription{
-    position: absolute;
-    left: 17em;
-    top: 8em;
+#personal-description{
+    position: relative;
+    z-index: 1;
+    left: 0;
+    top: .1em;
     color: white;
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
-    text-align: right;
-    margin: .1em .9em .1em .1em;
-    padding: .5em .2em .5em .2em;
+    font-size: .9em;
+    text-align: center;
+    margin: .5em 1em 1em 1em;
+    border: .1em;
+    padding: .5em 3.5em .5em 3.5em;
 }
-
 /* everything in nav */
-
 /*the nav-container is to shape and size the navigation menu*/
-
 #nav-container{
-    background-color: rgb(67, 0, 105);
-    
+    background-color: #69140E;
     position: fixed;
     z-index: 0;
     left: 0;
     top: 0;
     bottom: 0;
-    height: 100em;
-    width: 12em;
+    height: 100;
+    width: 15%;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-
 }
-
+#profile-picture{
+    position: absolute;
+    border-radius: 50%;
+    width: 75%;
+    margin: 10%;
+    border: solid rgb(0, 0, 0) .2em;
+}
+#profile-picture:hover{
+    box-shadow: 0 0px 20px rgb(0, 0, 0);
+}
 /* added a shadow hover affect to nav, so people can know they are currently on it */
 #nav-container:hover{
   box-shadow: 0 5px 15px rgb(0, 0, 0);  
 }
-
 /* h2=nav heading */
 h2{
     position: relative;
-    top:3em;
+    top:25%;
     color: rgb(255, 255, 255);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
+    font-size: 1.7em;
     text-align: center;
-    margin-bottom: 2em;
-    margin-left: .5em;
-    margin-right: .5em;
+    margin: .5em .2em .2em .2em;
     border: solid 0.1em black;
-    padding: .2em .2em .2em .2em;
+    padding: .1em .2em .1em .2em;
     text-decoration-line: underline;
 }
-
 #nav-list{
     position: relative;
-    top: 4em;
+    top: 25%;
     color: white;
     list-style: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-align: left;
-    
 }
-
-
 /* i seperated the nav-list from nav structure, for the nav-list provides the style and navList-structure, structures the list */
-
-.navList-structure {
-    margin-bottom: 1.9em;
+.nav-list-structure {
+    margin-bottom: 1em;
     margin-right: 3em;
     margin-left: .1em;
     text-align: left;
-  
 }
-
-
 /* how the link should look when not hovered or active */
-
 .nav-link{
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
-
 .nav-link:hover{
     background-color: rgb(250, 250, 250);
     color: rgb(0, 0, 0);
@@ -158,276 +139,192 @@ h2{
     margin-right: 1em;
     margin-left: -0.5em;
 }
-
-/* for the position of the section */
-
-/* everything in section/main */
-
-section{
-    position: absolute;
-    top: 15em;
-    left: 12em;
-    bottom: 15em;
+#contact-container{
+   position: relative;
+   top: 29%;
+   left: 0;
+   margin: 0em 0em 0em 0em;
+   display: flex;
 }
 
-.content-container{
+#link-img-mail{
+    border-radius: 50%;
+    width: 50%;
+    margin: 1em;
+    background-color: transparent;
+}
+#link-img-mail:hover{
+    box-shadow: 0px 5px 15px white;
+}
+
+#link-img-phone{
+    border-radius: 50%;
+    width: 50%;
+    margin-left: .1em;
+    background-color: transparent;
+    margin: 1em;
+}
+#link-img-phone:hover{
+    box-shadow: 0px 5px 15px white;
+}
+/* everything in main */
+main{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    bottom: 10%;
+}
+/* for the position of the sections */
+section{
     margin: 2em 2em 2em 2em;
     border: solid .2em black;
     padding: .1em 1em 1em .4em;
+    text-align: center;  
 }
-
-
-/* when you hover over my content, there will now be a shadow */
 /* added a shadow hover affect to content containers, so people can know which part they are currently on and to separate each part from one another */
-.content-container:hover{
+section:hover{
     box-shadow: 0 7px 17px rgb(0, 0, 0);
 }
-
 /* h3=content heading */
-
 h3{
-    background-color: rgb(4, 153, 96);
-    margin: 1em 1em 1em 0;
+    background-color: #FF8200;
+    margin: 1em 1em 1em 1em;
     padding:.4em .4em .4em .4em;
     border: solid .1em black;
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
 }
-
-
 /* h4= content sub heading */
-
 h4{
-    background-color: rgb(62, 97, 212);
-    margin: 1em 2em 1em 0;
+    background-color: #173753;
+    color: white;
+    margin: 1em 3em 1em 3em;
     padding: .1em 0em .1em 0em;
     border: solid .1em black;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5em;
 
 }
-
-#GedLink {
-    color: white;
+#description{
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+#Ged-link {
+    color: #FF8200;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     margin: 2em;
 }
-
-#GedLink:hover{
-    background-color: rgb(4, 153, 96);
+#Ged-link:hover{
+    background-color: #FF8200;
     box-shadow: 0 5px 15px rgb(0, 0, 0);
-    color: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
     font-size: 1.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: solid 0.1em rgb(255, 253, 253);
+    border: solid 0.1em rgb(0, 0, 0);
     padding: .1em .1em .1em .1em;
     
 }
-
-#CodeSpaceLink{
-    color: white;
+#CodeSpace-link{
+    color: #FF8200;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     margin: 2em;
 }
-
-#CodeSpaceLink:hover{
-    background-color: rgb(4, 153, 96);
+#CodeSpace-link:hover{
+    background-color: #FF8200;
     box-shadow: 0 5px 15px rgb(0, 0, 0);
-    color: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
     font-size: 1.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: solid 0.1em rgb(240, 240, 240);
+    border: solid 0.1em rgb(0, 0, 0);
     padding: .1em .1em .1em .1em;
 }
-
-#highschoolcontent-container{
+p{
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.list-container{
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    margin: 1em 1em 1em 0em;
+}
+.skills-headings{
+    background-color: #173753;
+    color: white;
+    margin: 1em 1em 1em 1em;
+    padding: .1em .1em .1em .1em;
+    border: solid .1em black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+}
+#skills-container {
     display: flex;
-    flex-flow: row wrap;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1em;
-    justify-content: space-between;
-}
-
-#type-container{
-     flex: 2;
-     padding: 1em, 2em, 1em, 2em;
-     margin: 1em 2em 1em 2em;
-}
-
-#year-container{
-    flex: 1;
-    padding: 1em, 2em, 1em, 2em;
-    margin: 1em 2em 1em 2em;
-}
-
-
-/* this second box is used for the list under "highschool diploma" and "intro to web" under the education part to keep them in line */
-
-.Second-container{
-     padding: 1em, 2em, 1em, 2em;
-     margin: 1em 2em 1em 2em;
-     font-size: 1em;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     color: white;
-}
-
-
-/* this education description container is used for the list under "highschool diploma" and "intro to web" under the education part because they both contain the same type of info to keep them in line  */
-
-.EducationDescription-container{
-    padding: 1em, 2em, 1em, 2em;
-    margin: 1em 2em 1em 2em;
-    font-size: 1em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-}
-
-#Course-container{
+} 
+ul {
     display: flex;
-    flex-flow: row wrap;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1em;
-    justify-content: space-between;
-    
+    flex-direction: column;
+    margin: 0 5.5em 1em 5.5em;
 }
-
-#CourseYear-container{
-    flex: 1;
-    padding: 1em, 2em, 0em, 2em;
-    margin: 1em 2em 0em 2em;
-}
-
-#typeCourse-container{
-    flex: 2;
-    padding: 1em, 2em, 0em, 2em;
-    margin: 1em 2em 0em 2em;
-}
-
-.experience-container{
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1em;
-    padding: .5em 2em 0em 1em;
-    margin: .5em 2em 0em 1em;
-}
-
-.skillsAndinterest-List{
+.skills-interest-List{
     list-style: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     margin-bottom: .4em;
 }
-
-.coding-list{
-    
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1em;
-    margin-bottom: .6em;
-    margin-left: .7em;
-}
-
-/* background image for footer was found on "pixabay.com" */
-
 /* everything in the footer */
-
 footer{
-    background-image: url(../images/star-background.jpg);
+    background-color: #173753;
     background-size: cover;
     position: absolute;
     z-index: 0;
-    left: 12em;
-    bottom: 0;
-    right: 0;
-    top: 170em;
-    width: 66.8em;
-    height: 15em;
-    padding: .1em .1em 1em .1em;
-    margin: .1em .1em .1em .1em;
+    left: 15.2%;
+    right: 2em;
+    bottom: 5%;
+    top: 410%;
+    width: 79.9%;
+    height: 25%;
+    margin: 0em 2em 2em 2em;
+    border: .1em;
+    padding: 1% 1% 1% 1%;
+    text-align: center;
 }
 /* added a shadow hover affect to footer, so people can know they are currently on it and to help separate it from the rest of content */
 footer:hover{
     box-shadow: 0 0px 20px rgb(0, 0, 0);
 }
-
-#footerHeadings-container{
-    display: flex;
-    flex-flow: row wrap;
-}
-
-#contact-style{
-    flex: 1;
-    color: white;
-    text-decoration-line: underline;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 100%;
-    padding: 1em 2em 1em 2em;
-    margin: 1em 3em .3em 1em;
-}
-
 #social-style{
-    flex: 1;
     color: white;
     text-decoration-line: underline;
     font-family: 'Courier New', Courier, monospace;
     font-size: 100%;
     padding: 1em 2em 1em 2em;
-    margin: 1em 1em .3em 16em;
+    margin: .5em;
 }
-
-#contactANDsocialDetails-container{
-    display: flex;
-    flex-flow: row wrap;
-}
-
-#contactDeatils-container{
-    flex: 3;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0em 1em 0em 1em;
-}
-
-#linkImg-mail{
+#link-img-instagram{
+    position: relative;
     flex: 1;
     border-radius: 50%;
-    width: 5em;
-    margin: 2em 2em 2em 2em;
+    width: 5%;
+    margin: .5em 1em 2em 1em;
     background-color: transparent;
 }
-
-#linkImg-phone{
+#link-img-instagram:hover{
+    box-shadow: 0px 5px 15px white;
+}
+#link-img-linkedin{
+    position: relative;
     flex: 2;
     border-radius: 50%;
-    width: 5em;
-    margin: 2em 2em 2em 2em;
+    width: 5%;
+    margin: .5em 1em 2em 1em;
     background-color: transparent;
 }
-
-
-#socialDetails-container{
-    flex: 2;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0em 1em 0em 8em;
-}
-
-#linkImg-instagram{
-    flex: 1;
-    border-radius: 50%;
-    width: 5em;
-    margin: 2em 2em 2em 2em;
-    background-color: transparent;
-}
-
-#linkImg-linkdin{
-    flex: 2;
-    border-radius: 50%;
-    width: 5em;
-    margin: 2em 2em 2em 2em;
-    background-color: transparent;
+#link-img-linkedin:hover{
+    box-shadow: 0px 5px 15px white;
 }

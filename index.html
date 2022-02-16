@@ -7,246 +7,231 @@
     <title>MichaelMooreResume</title>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
     <!-- added icon to the head of the tab -->
-    <link rel="icon" href="/images/tab-pic.png" />
+    <link rel="icon" href="/images/tab-image.png" />
   </head>
 
   <body>
     <header id="home">
-      <img
-        id="profilePic"
-        src="/images/michael-photo.jpg"
-        alt="Picture of Michael Moore"
-      />
       <h1 id="name">Michael Moore</h1>
-      <p id="DateOfBirth">2004/09/10</p>
-      <p id="personalDescription">
-        I am a 17 year old Tech enthusiast, willing to stop at nothing till i am
-        satisfied with the job at hand.
-      </p>
+      <p id="date-of-birth">2004/09/10</p>
+      <div id="personal-description">
+        A huge Tech enthusiast, constantly learning who to better technology and
+        willing to stop at nothing till i am satisfied with the job at hand.
+      </div>
     </header>
-<!-- i put nav under header because it makes it easier for me to edit anything in the nav -->
+    <!-- i put nav under header because it makes it easier for me to edit anything in the nav -->
     <nav>
       <div id="nav-container">
+        <img
+          id="profile-picture"
+          src="/images/michael-photo.jpg"
+          alt="Picture of Michael Moore"
+        />
         <h2>Content</h2>
         <ol id="nav-list">
           <!-- nav-list for style of whole list -->
-          <li class="navList-structure">
+          <li class="nav-list-structure">
             <a class="nav-link" href="#home"> Home</a>
           </li>
-          <li class="navList-structure">
+          <li class="nav-list-structure">
             <a class="nav-link" href="#education">Education</a>
           </li>
-          <li class="navList-structure">
+          <li class="nav-list-structure">
             <a class="nav-link" href="#experience">Experience</a>
           </li>
-          <li class="navList-structure">
+          <li class="nav-list-structure">
             <a class="nav-link" href="#skill">Skills</a>
           </li>
-          <li class="navList-structure">
+          <li class="nav-list-structure">
             <a class="nav-link" href="#interest">Interests</a>
           </li>
-          <li class="navList-structure">
-            <a class="nav-link" href="#contact">ContactT</a>
+          <li class="nav-list-structure">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <!-- navList-structure for structure of list items -->
         </ol>
+        <h2>Contact Me:</h2>
+        <div id="contact-container">
+          <a
+            class="mail-Link"
+            href="mailto:michaelwillemmoore@gmail.com"
+            title="e-mail me at michaelwillemmoore@gmail.com"
+            target="_blank"
+          >
+            <!--  <div id="mail-container"> -->
+            <img
+              id="link-img-mail"
+              src="/images/email.png"
+              alt="email me michaelwillemmoore@gmail.com"
+            />
+            <!-- <p class="mail-Link">michaelwillemmoore@gmail.com</p> -->
+            <!-- </div> -->
+          </a>
+          <a
+            class="phone-Link"
+            href="tel:+27792363841"
+            title="phone me at 079 236 3841"
+            target="_blank"
+          >
+            <!-- <div id="phone-container"> -->
+            <img
+              id="link-img-phone"
+              src="/images/phone.png"
+              alt="phone me at 079 236 3841"
+            />
+            <!-- <p class="phone-Link">Phone me; 079 236 3841</p> -->
+            <!-- </div> -->
+          </a>
+        </div>
       </div>
     </nav>
-<!-- i used section instead of main, i prefer it this way -->
-    <section>
+    <!-- i used section instead of main, i prefer it this way -->
+    <main>
       <article>
         <!--education section -->
-        <div id="education" class="content-container">
+        <section>
+          <h3>About</h3>
+          <p id="description">
+            I am a 17 year old male, who has a passion for learning new things
+            and who has an even bigger passion for anything tech related,
+            whether it be software, robotics, or electronic devices...i am
+            passionate about them all and want to be involved as much as
+            possible to further the capabilities of technology as we know it.
+          </p>
+        </section>
+        <section id="education">
           <h3>Education and Qualifications!</h3>
           <h4>High School Diploma</h4>
-          <div id="highschoolcontent-container">
-            <p id="type-container">Type : International GED Certificate</p>
-            <p id="year-container">Year Completed : 2021</p>
-          </div>
-          <div class="Second-container">
-            Marks :
-            <ul>
-              <li>RLA = 159/200</li>
-              <li>SS = 163/200</li>
-              <li>Science = 162/200</li>
-              <li>Math = 168/200</li>
-            </ul>
-          </div>
-          <p class="EducationDescription-container">
+          <p>Type : International GED Certificate</p>
+          <p>Completed : 2021</p>
+          <p>Marks :</p>
+          <ol class="list-container">
+            <li>RLA = 159/200</li>
+            <li>SS = 163/200</li>
+            <li>Science = 162/200</li>
+            <li>Math = 168/200</li>
+          </ol>
+
+          <p>
             In 2021 i enrolled into the GED syllabus and at the end of the year
             i Completed my International GED Certificate at the age of 17.
           </p>
           <p>
             <a
-              id="GedLink"
+              id="Ged-link"
               href="https://ged.com/blog/what-is-a-ged/"
               target="_blank"
               >Click here to learn more about GED!</a
             >
           </p>
           <h4>Intro To Web</h4>
-          <div id="Course-container">
-            <p id="typeCourse-container">Course : Intro to Web</p>
-            <p id="CourseYear-container">Year Completed : 2022</p>
-          </div>
-          <p class="Second-container">
-            Provider / Institution : CodeSpace Academy
-          </p>
-          <p class="EducationDescription-container">
+
+          <p>Course : Intro to Web</p>
+          <p>Completed : 2022</p>
+
+          <p>Provider / Institution : CodeSpace Academy</p>
+          <p>
             In 2022 i enrolled into the Software Engineering Course provided by
             CodeSpace Academy, as of lately I have only completed the Intro to
             Web Course.
           </p>
           <p>
             <a
-              id="CodeSpaceLink"
+              id="CodeSpace-link"
               href="https://codespace.co.za/course/software-engineering/"
               target="_blank"
               >Click here to learn about the CodeSpace Academy
               software-engineering course!</a
             >
           </p>
-        </div>
+        </section>
         <!--experience section-->
-        <div id="experience" class="content-container">
+        <section id="experience">
           <h3>Experience</h3>
-          <h4>Game Development Experience</h4>
-          <div class="experience-container">
-            <p>When: 01/03/2021-31/05/2021</p>
-            <p>
-              Company/business: freelancing/private [it was for 2 small game
-              developers based in USA]
-            </p>
-            <p>
-              Description: I was helping 2 small games developers I knew, part
-              time, with developing their first game.
-            </p>
-          </div>
+          <h4>Game Development FreeLancing</h4>
+          <p>When: 01/03/2021-31/05/2021</p>
+          <p>
+            Company/business: freelancing/private [it was for 2 small game
+            developers based in USA]
+          </p>
+          <p>
+            Description: I was helping 2 small games developers I knew, part
+            time, with developing their first game.
+          </p>
           <h4>"Youtuber" & "Streamer"</h4>
-          <div class="experience-container">
-            <p>When: 20/01/2020 - 04/12/2021</p>
-            <p>
-              Description: I ran my own youtube channel and twitch channel for
-              about one year. i did my own recording, editing and publishing as
-              well managed my own social accounts for the channels. (stopped
-              doing this so i could do my Software Engineering course [as of now
-              channels have been deleted, they had collectively 110 followers.])
-            </p>
-          </div>
-        </div>
+          <p>When: 20/01/2020 - 04/12/2021</p>
+          <p>
+            Description: I ran my own youtube channel and twitch channel for
+            about one year. i did my own recording, editing and publishing as
+            well managed my own social accounts for the channels. (stopped doing
+            this so i could do my Software Engineering course [as of now
+            channels have been deleted, they had collectively 110 followers.])
+          </p>
+        </section>
         <!--skills section-->
-        <div id="skill" class="content-container">
+        <section id="skill">
           <h3>Skills</h3>
-          <h4>Work-Environment-Related Skills!</h4>
-          <ul>
-            <li class="skillsAndinterest-List">Communication</li>
-            <li class="skillsAndinterest-List">Team work</li>
-            <li class="skillsAndinterest-List">Leadership</li>
-            <li class="skillsAndinterest-List">Observation</li>
-            <li class="skillsAndinterest-List">Problem Solving</li>
-          </ul>
-          <h4>General-Skills</h4>
-          <ul>
-            <li class="skillsAndinterest-List">
-              Video recording, editing & publishing
-            </li>
-            <li class="skillsAndinterest-List">3-D Modeling/Designing</li>
-            <li class="skillsAndinterest-List">Video game development</li>
-            <li class="skillsAndinterest-List">
-              Coding =
-              <ul class="coding-list">
-                <li class="coding-list">HTML</li>
-                <li class="coding-list">CSS</li>
-                <li class="coding-list">C#</li>
-                <li class="coding-list">C++</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+          <div id="skills-container">
+            <ul>
+              <h4 class="skills-headings">Work-Skills!</h4>
+              <li class="skills-interest-List">Communication</li>
+              <li class="skills-interest-List">Team work</li>
+              <li class="skills-interest-List">Leadership</li>
+              <li class="skills-interest-List">Observation</li>
+              <li class="skills-interest-List">Problem Solving</li>
+            </ul>
+
+            <ul>
+              <h4 class="skills-headings">General-Skills</h4>
+              <li class="skills-interest-List">
+                Video recording, editing & publishing
+              </li>
+              <li class="skills-interest-List">3-D Modeling/Designing</li>
+              <li class="skills-interest-List">Video game development</li>
+              <li class="skills-interest-List">Coding =(html,css,c#,c++)</li>
+            </ul>
+          </div>
+        </section>
         <!--skills section-->
-        <div id="interest" class="content-container">
+        <section id="interest">
           <h3>Interests</h3>
           <ul>
-            <li class="skillsAndinterest-List">Cars</li>
-            <li class="skillsAndinterest-List">Technology</li>
-            <li class="skillsAndinterest-List">AI</li>
-            <li class="skillsAndinterest-List">Robotics</li>
-            <li class="skillsAndinterest-List">Gaming</li>
-            <li class="skillsAndinterest-List">Game Development</li>
-            <li class="skillsAndinterest-List">
-              Coding
-              <ul>
-                <li class="coding-list">HTML</li>
-                <li class="coding-list">CSS</li>
-                <li class="coding-list">C#</li>
-                <li class="coding-list">C++</li>
-              </ul>
-            </li>
+            <li class="skills-interest-List">Cars</li>
+            <li class="skills-interest-List">Technology</li>
+            <li class="skills-interest-List">AI</li>
+            <li class="skills-interest-List">Robotics</li>
+            <li class="skills-interest-List">Gaming</li>
           </ul>
-        </div>
+        </section>
       </article>
-    </section>
+    </main>
 
     <footer id="contact">
-      <div id="footerHeadings-container">
-        <h5 id="contact-style">Contact me here:</h5>
-        <!-- had to use ids here to properly space out the h5 elements in flex box -->
-        <h5 id="social-style">Follow the socials here:</h5>
-      </div>
+      <h5 id="social-style">Follow the socials here:</h5>
       <!-- for all links below, a text will appear when you hover over the "link-image" -->
-      <div id="contactANDsocialDetails-container">
-        <div id="contactDeatils-container">
-          <a
-            class="contactAndSocial-Links"
-            href="mailto:michaelwillemmoore@gmail.com"
-            title="e-mail me at michaelwillemmoore@gmail.com"
-            target="_blank"
-          >
-            <img
-              id="linkImg-mail"
-              src="/images/email.png"
-              alt="email me michaelwillemmoore@gmail.com"
-            />
-          </a>
-          <a
-            class="contactAndSocial-Links"
-            href="tel:+27792363841"
-            title="phone me at 079 236 3841"
-            target="_blank"
-          >
-            <img
-              id="linkImg-phone"
-              src="/images/phone.png"
-              alt="phone me at 079 236 3841"
-            />
-          </a>
-        </div>
-        <div id="socialDetails-container">
-          <a
-            class="contactAndSocial-Links"
-            href="https://www.instagram.com/the1theonly_michaelmoore/"
-            title="visit my instagram at the1theonly_michaelmoore"
-            target="_blank"
-          >
-            <img
-              id="linkImg-instagram"
-              src="/images/Instagram.png"
-              alt="visit my instagram at the1theonly_michaelmoore"
-            />
-          </a>
-          <a
-            class="contactAndSocial-Links"
-            href="https://www.linkedin.com/in/michael-moore-66a249231/"
-            title="go visit my linkedin at Michael Moore"
-            target="_blank"
-          >
-            <img
-              id="linkImg-linkdin"
-              src="/images/linkedin.png"
-              alt=" view my linkedin at Michael Moore"
-            />
-          </a>
-        </div>
+      <div id="socialDetails-container">
+        <a
+          href="https://www.instagram.com/the1theonly_michaelmoore/"
+          title="visit my instagram at the1theonly_michaelmoore"
+          target="_blank"
+        >
+          <img
+            id="link-img-instagram"
+            src="/images/Instagram.png"
+            alt="visit my instagram at the1theonly_michaelmoore"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/michael-moore-66a249231/"
+          title="go visit my linkedin at Michael Moore"
+          target="_blank"
+        >
+          <img
+            id="link-img-linkedin"
+            src="/images/linkedin.png"
+            alt=" view my linkedin at Michael Moore"
+          />
+        </a>
       </div>
     </footer>
   </body>
