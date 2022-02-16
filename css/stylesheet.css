@@ -4,7 +4,7 @@
 
 
 body{
-    background-color: rgb(131, 117, 117);
+    background-color: rgb(100, 100, 100);
 }
 
 
@@ -22,7 +22,7 @@ header{
     height: 15em;
     margin: 0em .0em .1em .0em;
 }
-
+/* added a shadow hover affect to header, so people can know they are currently on it and to help seperate it from the content below */
 header:hover{
     box-shadow: 0 0px 20px rgb(0, 0, 0);
 }
@@ -84,7 +84,7 @@ header:hover{
 
 #nav-container{
     background-color: rgb(67, 0, 105);
-    box-shadow: 0 5px 15px rgb(0, 0, 0);
+    
     position: fixed;
     z-index: 0;
     left: 0;
@@ -95,6 +95,11 @@ header:hover{
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 
+}
+
+/* added a shadow hover affect to nav, so people can know they are currently on it */
+#nav-container:hover{
+  box-shadow: 0 5px 15px rgb(0, 0, 0);  
 }
 
 /* h2=nav heading */
@@ -173,6 +178,7 @@ section{
 
 
 /* when you hover over my content, there will now be a shadow */
+/* added a shadow hover affect to content containers, so people can know which part they are currently on and to separate each part from one another */
 .content-container:hover{
     box-shadow: 0 7px 17px rgb(0, 0, 0);
 }
@@ -344,7 +350,7 @@ footer{
     padding: .1em .1em 1em .1em;
     margin: .1em .1em .1em .1em;
 }
-
+/* added a shadow hover affect to footer, so people can know they are currently on it and to help separate it from the rest of content */
 footer:hover{
     box-shadow: 0 0px 20px rgb(0, 0, 0);
 }
