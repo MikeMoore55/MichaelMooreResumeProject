@@ -4,7 +4,7 @@
 
 
 body{
-    background-color: #515050;
+    background-color: #515050s;
 }
 
 
@@ -198,7 +198,7 @@ h3{
 /* h4= content sub heading */
 
 h4{
-    background-color: rgb(62, 97, 212);
+    background-color: rgb(37, 64, 155);
     margin: 1em 2em 1em 0;
     padding: .1em 0em .1em 0em;
     border: solid .1em black;
