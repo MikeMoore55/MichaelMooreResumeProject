@@ -21,74 +21,69 @@
     </header>
     <!-- i put nav under header because it makes it easier for me to edit anything in the nav -->
     <nav>
-      <div id="nav-container">
-        <img
-          id="profile-picture"
-          src="/images/michael-photo.jpg"
-          alt="Picture of Michael Moore"
-        />
-        <h2>Content</h2>
-        <ol id="nav-list">
-          <!-- nav-list for style of whole list -->
-          <li class="nav-list-structure">
-            <a class="nav-link" href="#home"> Home</a>
-          </li>
-          <li class="nav-list-structure">
-            <a class="nav-link" href="#education">Education</a>
-          </li>
-          <li class="nav-list-structure">
-            <a class="nav-link" href="#experience">Experience</a>
-          </li>
-          <li class="nav-list-structure">
-            <a class="nav-link" href="#skill">Skills</a>
-          </li>
-          <li class="nav-list-structure">
-            <a class="nav-link" href="#interest">Interests</a>
-          </li>
-          <li class="nav-list-structure">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <!-- navList-structure for structure of list items -->
-        </ol>
-        <h2>Contact Me:</h2>
-        <div id="contact-container">
-          <a
-            class="mail-Link"
-            href="mailto:michaelwillemmoore@gmail.com"
-            title="e-mail me at michaelwillemmoore@gmail.com"
-            target="_blank"
-          >
-            <!--  <div id="mail-container"> -->
-            <img
-              id="link-img-mail"
-              src="/images/email.png"
-              alt="email me michaelwillemmoore@gmail.com"
-            />
-            <!-- <p class="mail-Link">michaelwillemmoore@gmail.com</p> -->
-            <!-- </div> -->
-          </a>
-          <a
-            class="phone-Link"
-            href="tel:+27792363841"
-            title="phone me at 079 236 3841"
-            target="_blank"
-          >
-            <!-- <div id="phone-container"> -->
-            <img
-              id="link-img-phone"
-              src="/images/phone.png"
-              alt="phone me at 079 236 3841"
-            />
-            <!-- <p class="phone-Link">Phone me; 079 236 3841</p> -->
-            <!-- </div> -->
-          </a>
+      <aside>
+        <div id="nav-container">
+          <img
+            id="profile-picture"
+            src="/images/michael-photo.jpg"
+            alt="Picture of Michael Moore"
+          />
+          <h2>Content</h2>
+          <ol id="nav-list">
+            <!-- nav-list for style of whole list -->
+            <li class="nav-list-structure">
+              <a class="nav-link" href="#home"> Home</a>
+            </li>
+            <li class="nav-list-structure">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-list-structure">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-list-structure">
+              <a class="nav-link" href="#skill">Skills</a>
+            </li>
+            <li class="nav-list-structure">
+              <a class="nav-link" href="#interest">Interests</a>
+            </li>
+            <li class="nav-list-structure">
+              <a class="nav-link" href="#social">Socials</a>
+            </li>
+            <!-- navList-structure for structure of list items -->
+          </ol>
+          <h2>Contact Me:</h2>
+          <div id="contact-container">
+            <a
+              class="mail-Link"
+              href="mailto:michaelwillemmoore@gmail.com"
+              title="e-mail me at michaelwillemmoore@gmail.com"
+              target="_blank"
+            >
+              <img
+                id="link-img-mail"
+                src="/images/email.png"
+                alt="email me michaelwillemmoore@gmail.com"
+              />
+            </a>
+            <a
+              class="phone-Link"
+              href="tel:+27792363841"
+              title="phone me at 079 236 3841"
+              target="_blank"
+            >
+              <img
+                id="link-img-phone"
+                src="/images/phone.png"
+                alt="phone me at 079 236 3841"
+              />
+            </a>
+          </div>
         </div>
-      </div>
+      </aside>
     </nav>
-    <!-- i used section instead of main, i prefer it this way -->
     <main>
       <article>
-        <!--education section -->
+        <!-- about section -->
         <section>
           <h3>About</h3>
           <p id="description">
@@ -99,6 +94,7 @@
             possible to further the capabilities of technology as we know it.
           </p>
         </section>
+        <!--education section -->
         <section id="education">
           <h3>Education and Qualifications!</h3>
           <h4>High School Diploma</h4>
@@ -172,6 +168,7 @@
         <section id="skill">
           <h3>Skills</h3>
           <div id="skills-container">
+          <!-- made a div for flex box to put the 2 skill categories next to each other  -->
             <ul>
               <h4 class="skills-headings">Work-Skills!</h4>
               <li class="skills-interest-List">Communication</li>
@@ -180,7 +177,7 @@
               <li class="skills-interest-List">Observation</li>
               <li class="skills-interest-List">Problem Solving</li>
             </ul>
-
+            <!-- the ul's are the child attributes here, no other div's-->
             <ul>
               <h4 class="skills-headings">General-Skills</h4>
               <li class="skills-interest-List">
@@ -193,6 +190,7 @@
           </div>
         </section>
         <!--skills section-->
+        <!-- Mr Abdullah, i did at first have the skills and intrests next to each other but it looked way to "squished so i left it the way it is now" -->
         <section id="interest">
           <h3>Interests</h3>
           <ul>
@@ -206,9 +204,10 @@
       </article>
     </main>
 
-    <footer id="contact">
+    <footer id="social">
+    <!-- Mr Abdullah, i also tried to have my socials wiith my contact details in the side/nav bar, but again it looked way to squished and look like to much was going on in a small area, so i went back to having a footer with just the socials in -->
       <h5 id="social-style">Follow the socials here:</h5>
-      <!-- for all links below, a text will appear when you hover over the "link-image" -->
+      <!-- for all links below, a text will appear when you hover over the "link-image" as well as a white shadow -->
       <div id="socialDetails-container">
         <a
           href="https://www.instagram.com/the1theonly_michaelmoore/"

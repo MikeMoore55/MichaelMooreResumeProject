@@ -1,12 +1,15 @@
 /* from lesson with Mr Schalk, Always do this */
 *{box-sizing: border-box;}
+
 /* added this to allow internal links to scroll to desired content instead of directly taking you there */
 *{scroll-behavior: smooth;}
-/* to see where i got my color-shceme follow this link:" https://coolors.co/004e89-ff8200-69140e-173753-868784 */
+
+/* to see where i got my color-scheme follow this link:" https://coolors.co/004e89-ff8200-69140e-173753-868784 */
 body{
     background-color: #868784;
 }
-/* made header roughly the same size of the section containers so the flow can look better */
+
+/* made header roughly the same width of the section containers so the overall flow can look better [Mr Abdullah said it would make the flow and whole page layout better, and i agree] */
 header{
     background-color: #173753;
     background-size: cover;
@@ -21,10 +24,12 @@ header{
     border: .1em;
     padding: 1% 1% 1% 1%;
 }
-/* added a shadow hover affect to header, so people can know they are currently on it and to help seperate it from the content below */
+
+/* added a shadow-hover affect to header, so people can know they are currently on it and to help separate it from the content below */
 header:hover{
     box-shadow: 0 5px 15px rgb(0, 0, 0); 
 }
+
 #name {
     position: relative;
     z-index: 1;
@@ -39,6 +44,7 @@ header:hover{
     padding: 0 .2em .1em .2em;
     text-decoration-line: underline;
 }
+
 #date-of-birth{
     position: relative;
     z-index: 1;
@@ -51,8 +57,8 @@ header:hover{
     text-align: center;
     margin: .1em .2em .1em .1em;
     padding: .1em .2em .5em .2em;
-
 }
+
 #personal-description{
     position: relative;
     z-index: 1;
@@ -67,7 +73,8 @@ header:hover{
     border: .1em;
     padding: .5em 3.5em .5em 3.5em;
 }
-/* everything in nav */
+
+/* everything in nav/side-bar */
 /*the nav-container is to shape and size the navigation menu*/
 #nav-container{
     background-color: #69140E;
